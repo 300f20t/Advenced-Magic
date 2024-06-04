@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MagicTreeLog"
+      },
+      {
+        "value": "CUSTOM:MagicTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MagicTreeLog"
+      },
+      {
+        "value": "CUSTOM:MagicTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagicTreeWood"
+    },
+    "name": "magic_tree_wood_recipe",
+    "namespace": "mod"
+  }
+}

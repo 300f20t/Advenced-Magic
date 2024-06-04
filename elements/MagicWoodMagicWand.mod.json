@@ -1,0 +1,37 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "magic_wood_magic_wand",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Magic Wood Magic Wand",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "MagicWandInfo"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:AdvencedMagicCreativeTab"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "MagicWandRMB"
+    }
+  }
+}

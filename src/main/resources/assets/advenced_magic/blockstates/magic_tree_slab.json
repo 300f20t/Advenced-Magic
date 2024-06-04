@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "advenced_magic:block/magic_tree_slab"
+    },
+    "type=top": {
+      "model": "advenced_magic:block/magic_tree_slab_top"
+    },
+    "type=double": {
+      "model": "advenced_magic:block/magic_tree_slab_full"
+    }
+  }
+}

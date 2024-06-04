@@ -1,0 +1,1172 @@
+{
+  "mod_elements": [
+    {
+      "name": "WoodenMagicWand",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_magic_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/wooden_magic_wand.json",
+          "src/main/java/net/mcreator/advencedmagic/item/WoodenMagicWandItem.java"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "WoodenMagicWandCraft",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_magic_wand_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/wooden_magic_wand_craft.json"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "MagicTable",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_table",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/block/entity/MagicTableBlockEntity.java",
+          "src/main/resources/assets/advenced_magic/models/item/magic_table.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_table.json",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_table.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTableBlock.java",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_table.json"
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "MagicTableCraft",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_table_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_table_craft.json"
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "MagicTableGUI",
+      "type": "gui",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/network/MagicTableGUIButtonMessage.java",
+          "src/main/java/net/mcreator/advencedmagic/world/inventory/MagicTableGUIMenu.java",
+          "src/main/java/net/mcreator/advencedmagic/client/gui/MagicTableGUIScreen.java",
+          "src/main/java/net/mcreator/advencedmagic/network/MagicTableGUISlotMessage.java"
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "AdvencedMagicCreativeTab",
+      "type": "tab",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advenced_magic_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MagicTreeWood",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_wood.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeWoodBlock.java",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_wood.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_wood.json",
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_wood.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeLog",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_log.json",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_log.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_log.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeLogBlock.java",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_log.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreePlanks",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_planks.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_planks.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreePlanksBlock.java",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_planks.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_planks.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeLeaves",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_leaves.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_leaves.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_leaves.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeLeavesBlock.java",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_leaves.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeStairs",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_stairs.json",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_stairs.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_stairs_outer.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeStairsBlock.java",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_stairs.json",
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_stairs.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_stairs_inner.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeSlab",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_slab_full.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_slab.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeSlabBlock.java",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_slab.json",
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_slab.json",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_slab.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_slab_top.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeFence",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_fence.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeFenceBlock.java",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence_post.json",
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_fence.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_fence.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence_inventory.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeFenceGate",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence_gate.json",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_fence_gate.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_fence_gate.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence_gate_open.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence_gate_wall.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeFenceGateBlock.java",
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_fence_gate.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_fence_gate_wall_open.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreePressurePlate",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_pressure_plate.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_pressure_plate_down.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_pressure_plate.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_pressure_plate.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreePressurePlateBlock.java",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_pressure_plate.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeButton",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_button_inventory.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_button_pressed.json",
+          "src/main/resources/assets/advenced_magic/models/block/magic_tree_button.json",
+          "src/main/resources/assets/advenced_magic/models/item/magic_tree_button.json",
+          "src/main/resources/assets/advenced_magic/blockstates/magic_tree_button.json",
+          "src/main/resources/data/advenced_magic/loot_tables/blocks/magic_tree_button.json",
+          "src/main/java/net/mcreator/advencedmagic/block/MagicTreeButtonBlock.java"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeWoodRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_wood_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreePlanksLogRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_planks_log_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreePlanksWoodRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_planks_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_planks_wood_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeStairsRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeSlabRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_slab_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeFenceRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_fence_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreePressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeButtonRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_button_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTreeStickRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_tree_stick_recipe.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "MagicTree",
+      "type": "feature",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/neoforge/biome_modifier/magic_tree_biome_modifier.json",
+          "src/main/resources/data/advenced_magic/worldgen/configured_feature/magic_tree.json",
+          "src/main/resources/data/advenced_magic/worldgen/placed_feature/magic_tree.json"
+        ]
+      },
+      "path": "~/Magic Tree"
+    },
+    {
+      "name": "WhatWasThat",
+      "type": "achievement",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_first_magic_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/advancements/my_first_magic_wand.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "GUIItemDisplaying",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_item_displaying",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/GUIItemDisplayingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "IronFile",
+      "type": "tool",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_file",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/item/IronFileItem.java",
+          "src/main/resources/assets/advenced_magic/models/item/iron_file.json"
+        ]
+      }
+    },
+    {
+      "name": "IronDiamondCoatedFile",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_diamond_coated_file",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/item/IronDiamondCoatedFileItem.java",
+          "src/main/resources/assets/advenced_magic/models/item/iron_diamond_coated_file.json"
+        ]
+      }
+    },
+    {
+      "name": "IronFileCraft",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_file_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/iron_file_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "IronDiamondCoatedFileCraft",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_diamond_coated_file_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/iron_diamond_coated_file_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "FacetedDiamond",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faceted_diamond",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/item/FacetedDiamondItem.java",
+          "src/main/resources/assets/advenced_magic/models/item/faceted_diamond.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondCutting",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_cutting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/diamond_cutting.json"
+        ]
+      }
+    },
+    {
+      "name": "MagicTableNotesGUI",
+      "type": "gui",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_table_notes_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/client/gui/MagicTableNotesGUIScreen.java",
+          "src/main/java/net/mcreator/advencedmagic/world/inventory/MagicTableNotesGUIMenu.java"
+        ]
+      },
+      "path": "~/Magic Table/Notes"
+    },
+    {
+      "name": "OpenMagicTableNotesGUI",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_magic_table_notes_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/OpenMagicTableNotesGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "OpenMagicTableModifiersGUI",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_magic_table_modifiers_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/OpenMagicTableModifiersGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "ModifierChangeInSlot1",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modifier_change_in_slot_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "ModifierChangeInSlot2",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modifier_change_in_slot_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "ModifierChangeInSlot3",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modifier_change_in_slot_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "ModifierChangeInSlot4",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modifier_change_in_slot_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "FacetedQuartz",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faceted_quartz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/item/FacetedQuartzItem.java",
+          "src/main/resources/assets/advenced_magic/models/item/faceted_quartz.json"
+        ]
+      }
+    },
+    {
+      "name": "QuartzCutting",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_cutting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/quartz_cutting.json"
+        ]
+      }
+    },
+    {
+      "name": "MagicWandRMB",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wand_rmb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/MagicWandRMBProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "RingWhileUpdateTick",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_while_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/RingWhileUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "PlayerMana",
+      "type": "overlay",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "player_mana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/client/screens/PlayerManaOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "MagicWandInfo",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wand_info",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/MagicWandInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "IronMagicRing",
+      "type": "curiosbauble",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_magic_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/iron_magic_ring.json",
+          "src/main/java/net/mcreator/advencedmagic/item/IronMagicRingItem.java"
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "ManaInfo",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_info",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ManaInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaxManaInfo",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_info",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/MaxManaInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicRingEquipped",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_ring_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/MagicRingEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "MagicRingUnequipped",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_ring_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/MagicRingUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "MagicRingInfo",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_ring_info",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/MagicRingInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "MagicWoodMagicWand",
+      "type": "tool",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wood_magic_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/item/MagicWoodMagicWandItem.java",
+          "src/main/resources/assets/advenced_magic/models/item/magic_wood_magic_wand.json"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "MagicWoodMagicWandCraft",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wood_magic_wand_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/recipes/magic_wood_magic_wand_craft.json"
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "PlayerManaUsloviiePokazaNalozhieniia",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_mana_usloviie_pokaza_nalozhieniia",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/PlayerManaUsloviiePokazaNalozhieniiaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenRing",
+      "type": "curiosbauble",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advenced_magic/models/item/golden_ring.json",
+          "src/main/java/net/mcreator/advencedmagic/item/GoldenRingItem.java"
+        ]
+      },
+      "path": "~/Rings"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "player_mana",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "max_player_mana",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:neoforge:files": [
+      "CUSTOM:IronFile",
+      "CUSTOM:IronDiamondCoatedFile"
+    ],
+    "ITEMS:neoforge:modifiers_3": [
+      "Items.NETHERITE_INGOT",
+      "Items.NETHER_STAR",
+      "Blocks.OBSIDIAN",
+      "Blocks.CRYING_OBSIDIAN"
+    ],
+    "ITEMS:neoforge:modifiers_2": [
+      "Items.AMETHYST_SHARD",
+      "Items.ECHO_SHARD"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:MagicTreeSlab"
+    ],
+    "ITEMS:neoforge:modifiers_1": [
+      "CUSTOM:FacetedDiamond",
+      "CUSTOM:FacetedQuartz"
+    ],
+    "ITEMS:neoforge:modifiable_items": [
+      "CUSTOM:WoodenMagicWand",
+      "CUSTOM:IronMagicRing",
+      "CUSTOM:MagicWoodMagicWand"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:MagicTreeButton",
+      "~CUSTOM:MagicTreePressurePlate",
+      "~CUSTOM:MagicTreeFenceGate",
+      "~CUSTOM:MagicTreeSlab",
+      "~CUSTOM:MagicTreeStairs",
+      "~CUSTOM:MagicTreePlanks",
+      "~CUSTOM:MagicTreeLog",
+      "~CUSTOM:MagicTreeWood"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:MagicTreeStairs"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:MagicTreeFence"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.advenced_magic.iron_diamond_coated_file": "Iron Diamond Coated File",
+      "block.advenced_magic.magic_tree_fence": "MagicTree Fence",
+      "gui.advenced_magic.magic_table_gui.label_modifiers": "Modifiers",
+      "item.advenced_magic.faceted_quartz": "Faceted Quartz",
+      "gui.advenced_magic.magic_table_gui.label_shift_click_to_change": "Shift + click to change",
+      "block.advenced_magic.magic_tree_slab": "MagicTree Slab",
+      "gui.advenced_magic.magic_table_gui.tooltip_111": "111",
+      "gui.advenced_magic.magic_table_gui.tooltip_333": "333",
+      "block.advenced_magic.magic_tree_pressure_plate": "MagicTree Pressure Plate",
+      "advancements.my_first_magic_wand.title": "My first magic wand",
+      "item.advenced_magic.magic_wood_magic_wand": "Magic Wood Magic Wand",
+      "item_group.advenced_magic.advenced_magic_creative_tab": "Advenced Magic",
+      "block.advenced_magic.magic_tree_button": "MagicTree Button",
+      "gui.advenced_magic.player_mana.label_max_mana": "MAX mana:",
+      "item.advenced_magic.golden_ring": "Golden Ring",
+      "gui.advenced_magic.player_mana.label_player_mana": "Player mana:",
+      "block.advenced_magic.magic_tree_planks": "MagicTree Planks",
+      "block.advenced_magic.magic_tree_wood": "MagicTree Wood",
+      "advancements.my_first_magic_wand.descr": "Welcome to Advanced Magic",
+      "item.advenced_magic.iron_file": "Iron File",
+      "block.advenced_magic.magic_table": "Magic Table",
+      "item.advenced_magic.faceted_diamond": "Faceted Diamond",
+      "gui.advenced_magic.magic_table_gui.tooltip_666": "666",
+      "gui.advenced_magic.magic_table_gui.tooltip_empty": "555",
+      "block.advenced_magic.magic_tree_stairs": "MagicTree Stairs",
+      "gui.advenced_magic.magic_table_gui.tooltip_222": "222",
+      "gui.advenced_magic.magic_table_gui.tooltip_444": "444",
+      "item.advenced_magic.iron_magic_ring": "Iron Magic Ring",
+      "block.advenced_magic.magic_tree_leaves": "MagicTree Leaves",
+      "block.advenced_magic.magic_tree_fence_gate": "MagicTree Fence Gate",
+      "item.advenced_magic.wooden_magic_wand": "Wooden magic wand",
+      "block.advenced_magic.magic_tree_log": "MagicTree Log"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Scripts",
+        "children": []
+      },
+      {
+        "name": "Achievements",
+        "children": []
+      },
+      {
+        "name": "Magic Tree",
+        "children": []
+      },
+      {
+        "name": "Magic Table",
+        "children": [
+          {
+            "name": "Notes",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Rings",
+        "children": []
+      },
+      {
+        "name": "Wands",
+        "children": []
+      },
+      {
+        "name": "Legacy",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "advenced_magic",
+    "modName": "Advenced Magic",
+    "version": "0.0.1alpha_1",
+    "author": "300f20t, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "logho_advenced_magic_1",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.20.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.advencedmagic"
+  },
+  "mcreatorVersion": 202400118518
+}

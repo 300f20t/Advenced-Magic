@@ -1,0 +1,9 @@
+{
+  "parent": "advenced_magic:custom/magic_table",
+  "textures": {
+    "all": "advenced_magic:block/magic_table",
+    "particle": "advenced_magic:block/magic_table_particle",
+    "0": "advenced_magic:block/magic_table"
+  },
+  "render_type": "solid"
+}

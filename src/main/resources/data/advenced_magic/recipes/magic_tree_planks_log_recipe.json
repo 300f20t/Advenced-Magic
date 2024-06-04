@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "advenced_magic:magic_tree_log"
+    }
+  ],
+  "result": {
+    "item": "advenced_magic:magic_tree_planks",
+    "count": 4
+  }
+}

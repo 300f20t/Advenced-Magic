@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "advenced_magic:item/magic_wood_magic_wand"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "advenced_magic:iron_magic_ring",
+    "advenced_magic:golden_ring"
+  ]
+}

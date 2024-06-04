@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "advenced_magic:block/magic_tree_pressure_plate"
+    },
+    "powered=true": {
+      "model": "advenced_magic:block/magic_tree_pressure_plate_down"
+    }
+  }
+}

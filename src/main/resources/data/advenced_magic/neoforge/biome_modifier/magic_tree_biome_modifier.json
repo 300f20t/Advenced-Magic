@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "advenced_magic:magic_tree",
+  "step": "surface_structures"
+}

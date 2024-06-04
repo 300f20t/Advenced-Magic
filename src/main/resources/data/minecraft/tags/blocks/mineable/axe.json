@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "advenced_magic:magic_tree_button",
+    "advenced_magic:magic_tree_pressure_plate",
+    "advenced_magic:magic_tree_fence_gate",
+    "advenced_magic:magic_tree_slab",
+    "advenced_magic:magic_tree_stairs",
+    "advenced_magic:magic_tree_planks",
+    "advenced_magic:magic_tree_log",
+    "advenced_magic:magic_tree_wood"
+  ]
+}

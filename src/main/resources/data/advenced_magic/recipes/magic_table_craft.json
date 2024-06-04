@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:crafting_table"
+    },
+    {
+      "item": "advenced_magic:wooden_magic_wand"
+    }
+  ],
+  "result": {
+    "item": "advenced_magic:magic_table",
+    "count": 1
+  }
+}

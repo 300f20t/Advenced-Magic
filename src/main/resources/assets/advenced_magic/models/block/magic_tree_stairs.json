@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "advenced_magic:block/magictree_planks",
+    "top": "advenced_magic:block/magictree_planks",
+    "side": "advenced_magic:block/magictree_planks"
+  },
+  "render_type": "solid"
+}

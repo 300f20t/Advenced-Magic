@@ -1,0 +1,87 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_max_mana",
+          "text": {
+            "fixedValue": "MAX mana:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 330,
+          "y": 377
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player_mana",
+          "text": {
+            "fixedValue": "Player mana:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 330,
+          "y": 386
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_max_mana_info",
+          "text": {
+            "fixedValue": "",
+            "name": "MaxManaInfo"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 384,
+          "y": 377
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_mana_info",
+          "text": {
+            "fixedValue": "",
+            "name": "ManaInfo"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 384,
+          "y": 386
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PlayerManaUsloviiePokazaNalozhieniia"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

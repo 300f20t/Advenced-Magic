@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "advenced_magic:block/magictree_planks",
+    "particle": "advenced_magic:block/magictree_planks"
+  },
+  "render_type": "solid"
+}

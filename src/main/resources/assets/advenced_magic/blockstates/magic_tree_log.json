@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "advenced_magic:block/magic_tree_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "advenced_magic:block/magic_tree_log"
+    },
+    "axis=z": {
+      "model": "advenced_magic:block/magic_tree_log",
+      "x": 90
+    }
+  }
+}

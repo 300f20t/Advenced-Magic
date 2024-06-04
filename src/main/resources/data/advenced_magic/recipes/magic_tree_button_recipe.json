@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "advenced_magic:magic_tree_planks"
+    }
+  ],
+  "result": {
+    "item": "advenced_magic:magic_tree_button",
+    "count": 1
+  }
+}
