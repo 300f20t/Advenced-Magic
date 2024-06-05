@@ -4,12 +4,13 @@ license="MIT License"
 
 [[mods]]
 modId="advenced_magic"
-version="0.0.11"
+version="0.0.1"
 displayName="Advenced Magic"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="300f20t, MCreator"
+description="Advanced Magic is a magic mod for minecraft that allows you to create modifiable magic items from various materials and conduct magic research."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

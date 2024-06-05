@@ -1191,7 +1191,8 @@
   "workspaceSettings": {
     "modid": "advenced_magic",
     "modName": "Advenced Magic",
-    "version": "0.0.1alpha_1",
+    "version": "0.0.1alpha",
+    "description": "Advanced Magic is a magic mod for minecraft that allows you to create modifiable magic items from various materials and conduct magic research.",
     "author": "300f20t, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
