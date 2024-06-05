@@ -1033,6 +1033,26 @@
         ]
       },
       "path": "~/Rings"
+    },
+    {
+      "name": "ManaResetOnRestart",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_reset_on_restart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ManaResetOnRestartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rings"
     }
   ],
   "variable_elements": [
