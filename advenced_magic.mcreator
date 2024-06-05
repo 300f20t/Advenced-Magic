@@ -890,46 +890,6 @@
       }
     },
     {
-      "name": "MagicRingEquipped",
-      "type": "procedure",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_ring_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/MagicRingEquippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Rings"
-    },
-    {
-      "name": "MagicRingUnequipped",
-      "type": "procedure",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_ring_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/MagicRingUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Rings"
-    },
-    {
       "name": "MagicRingInfo",
       "type": "procedure",
       "sortid": 66,
@@ -1010,6 +970,66 @@
         "files": [
           "src/main/resources/assets/advenced_magic/models/item/golden_ring.json",
           "src/main/java/net/mcreator/advencedmagic/item/GoldenRingItem.java"
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "RingWhenEquipped",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_when_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/RingWhenEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "GoldenRingBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_ring_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/GoldenRingBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rings"
+    },
+    {
+      "name": "IronMagicRingBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_magic_ring_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/IronMagicRingBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
       "path": "~/Rings"

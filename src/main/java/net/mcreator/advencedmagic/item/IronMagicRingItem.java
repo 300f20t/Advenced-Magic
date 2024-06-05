@@ -13,9 +13,9 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.advencedmagic.procedures.RingWhileUpdateTickProcedure;
-import net.mcreator.advencedmagic.procedures.MagicRingUnequippedProcedure;
+import net.mcreator.advencedmagic.procedures.RingWhenEquippedProcedure;
 import net.mcreator.advencedmagic.procedures.MagicRingInfoProcedure;
-import net.mcreator.advencedmagic.procedures.MagicRingEquippedProcedure;
+import net.mcreator.advencedmagic.procedures.IronMagicRingBaubleIsUnequippedProcedure;
 
 import java.util.List;
 
@@ -38,11 +38,11 @@ public class IronMagicRingItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		MagicRingEquippedProcedure.execute(slotContext.entity());
+		RingWhenEquippedProcedure.execute(slotContext.entity());
 	}
 
 	@Override
 	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-		MagicRingUnequippedProcedure.execute(slotContext.entity());
+		IronMagicRingBaubleIsUnequippedProcedure.execute(slotContext.entity());
 	}
 }
