@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "advenced_magic:high_quality_water_gem"
+    }
+  },
+  "result": {
+    "id": "advenced_magic:high_quality_water_gem_block",
+    "count": 1
+  }
+}

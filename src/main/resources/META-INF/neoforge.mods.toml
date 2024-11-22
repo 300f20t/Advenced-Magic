@@ -1,0 +1,48 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="MIT License"
+
+[[mods]]
+modId="advenced_magic"
+version="0.0.2"
+displayName="Advenced Magic"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="300f20t, MCreator"
+description="Advanced Magic is a magic mod for minecraft that allows you to create modifiable magic items from various materials and conduct magic research."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.advenced_magic]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.6.117,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.advenced_magic]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.advenced_magic]]
+    modId="curios_api"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.advenced_magic]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

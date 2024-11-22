@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicTreeButtonBlock extends ButtonBlock {
 	public MagicTreeButtonBlock() {
-		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).dynamicShape());
+		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f));
 	}
 
 	@Override

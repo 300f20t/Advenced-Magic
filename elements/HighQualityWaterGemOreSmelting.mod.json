@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0999999999999996,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:HighQualityWaterGemOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:HighQualityWaterGem"
+    },
+    "name": "high_quality_water_gem_ore_smelting",
+    "namespace": "mod"
+  }
+}

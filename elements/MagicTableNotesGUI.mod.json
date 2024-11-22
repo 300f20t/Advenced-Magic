@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -7,27 +7,26 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
-        "type": "imagebutton",
+        "type": "image",
         "data": {
-          "name": "imagebutton_modifiers_gui_inactive",
-          "image": "modifiers_gui_inactive.png",
-          "hoveredImage": "modifiers_gui.png",
-          "x": 132,
-          "y": 22
+          "image": "darkening_the_background.png",
+          "use1Xscale": true,
+          "x": 60,
+          "y": -1
         }
       },
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_notes_gui_inactive",
-          "image": "notes_gui_inactive.png",
-          "hoveredImage": "notes_gui.png",
-          "x": 152,
-          "y": 22
+          "name": "imagebutton_close",
+          "image": "close.png",
+          "hoveredImage": "close_active.png",
+          "x": 348,
+          "y": 8
         }
       },
       {
@@ -36,7 +35,81 @@
           "name": "imagebutton_note",
           "image": "note.png",
           "hoveredImage": "note_with_frame.png",
-          "x": 132,
+          "x": 96,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note1",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 150,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_research_notes",
+          "text": {
+            "fixedValue": "Research notes"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 8
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note2",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note3",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 258,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note4",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 312,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note5",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 114,
           "y": 44
         }
       },
@@ -45,8 +118,146 @@
         "data": {
           "image": "arrow.png",
           "use1Xscale": false,
-          "x": 159,
+          "x": 168,
           "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_down.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note6",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_down.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 276,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_research_progress",
+          "text": {
+            "fixedValue": "Research progress:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0",
+          "text": {
+            "fixedValue": "0"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_7",
+          "text": {
+            "fixedValue": "/ 9"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 206
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note7",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 258,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_note8",
+          "image": "note.png",
+          "hoveredImage": "note_with_frame.png",
+          "x": 312,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 276,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_up.png",
+          "use1Xscale": false,
+          "x": 312,
+          "y": 71
         }
       }
     ],

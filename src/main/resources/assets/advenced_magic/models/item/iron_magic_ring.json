@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "advenced_magic:item/iron_magic_ring"
-  }
-}

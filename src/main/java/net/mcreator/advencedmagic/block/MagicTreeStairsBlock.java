@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicTreeStairsBlock extends StairBlock {
 	public MagicTreeStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f));
 	}
 
 	@Override

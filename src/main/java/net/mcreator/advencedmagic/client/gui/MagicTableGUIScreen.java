@@ -86,7 +86,7 @@ public class MagicTableGUIScreen extends AbstractContainerScreen<MagicTableGUIMe
 		imagebutton_notes_gui_inactive = new ImageButton(this.leftPos + 26, this.topPos + -15, 16, 16,
 				new WidgetSprites(new ResourceLocation("advenced_magic:textures/screens/notes_gui_inactive.png"), new ResourceLocation("advenced_magic:textures/screens/notes_gui.png")), e -> {
 					if (true) {
-						PacketDistributor.SERVER.noArg().send(new MagicTableGUIButtonMessage(0, x, y, z));
+						PacketDistributor.sendToServer(new MagicTableGUIButtonMessage(0, x, y, z));
 						MagicTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 					}
 				}) {
@@ -97,10 +97,10 @@ public class MagicTableGUIScreen extends AbstractContainerScreen<MagicTableGUIMe
 		};
 		guistate.put("button:imagebutton_notes_gui_inactive", imagebutton_notes_gui_inactive);
 		this.addRenderableWidget(imagebutton_notes_gui_inactive);
-		imagebutton_modifiers_gui_inactive = new ImageButton(this.leftPos + 6, this.topPos + -15, 16, 16,
+		imagebutton_modifiers_gui_inactive = new ImageButton(this.leftPos + -57, this.topPos + 7, 32, 32,
 				new WidgetSprites(new ResourceLocation("advenced_magic:textures/screens/modifiers_gui_inactive.png"), new ResourceLocation("advenced_magic:textures/screens/modifiers_gui.png")), e -> {
 					if (true) {
-						PacketDistributor.SERVER.noArg().send(new MagicTableGUIButtonMessage(1, x, y, z));
+						PacketDistributor.sendToServer(new MagicTableGUIButtonMessage(1, x, y, z));
 						MagicTableGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 					}
 				}) {

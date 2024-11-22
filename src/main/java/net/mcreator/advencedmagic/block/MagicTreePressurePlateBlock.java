@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicTreePressurePlateBlock extends PressurePlateBlock {
 	public MagicTreePressurePlateBlock() {
-		super(BlockSetType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).dynamicShape().forceSolidOn());
+		super(BlockSetType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).forceSolidOn());
 	}
 
 	@Override

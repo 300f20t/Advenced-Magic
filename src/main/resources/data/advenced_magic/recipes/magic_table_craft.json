@@ -9,11 +9,11 @@
       "item": "minecraft:crafting_table"
     },
     {
-      "item": "advenced_magic:wooden_magic_wand"
+      "item": "advenced_magic:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "advenced_magic:magic_table",
+    "id": "advenced_magic:magic_table",
     "count": 1
   }
 }

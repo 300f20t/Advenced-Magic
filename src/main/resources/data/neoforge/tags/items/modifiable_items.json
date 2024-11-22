@@ -1,8 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "advenced_magic:wooden_magic_wand",
-    "advenced_magic:iron_magic_ring",
-    "advenced_magic:magic_wood_magic_wand"
-  ]
+  "values": []
 }

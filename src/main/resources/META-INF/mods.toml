@@ -43,6 +43,3 @@ description="Advanced Magic is a magic mod for minecraft that allows you to crea
     ordering="NONE"
     side="BOTH"
 
-
-[[mixins]]
-    config="mixins.advenced_magic.json"

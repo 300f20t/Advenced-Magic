@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "block",
   "definition": {
     "texture": "magictree_planks",
@@ -42,9 +42,11 @@
     "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:AdvencedMagicCreativeTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AdvencedMagicCreativeTab"
+      }
+    ],
     "destroyTool": "axe",
     "customDrop": {
       "value": ""
@@ -101,7 +103,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

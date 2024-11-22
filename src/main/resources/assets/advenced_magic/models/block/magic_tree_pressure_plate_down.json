@@ -1,6 +1,7 @@
 {
   "parent": "block/pressure_plate_down",
   "textures": {
+    "particle": "advenced_magic:block/magictree_planks",
     "texture": "advenced_magic:block/magictree_planks"
   },
   "render_type": "solid"

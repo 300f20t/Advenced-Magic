@@ -3,6 +3,5 @@
   "textures": {
     "all": "advenced_magic:block/magictree_leaves",
     "particle": "advenced_magic:block/magictree_leaves"
-  },
-  "render_type": "cutout_mipped"
+  }
 }

@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicTreeSlabBlock extends SlabBlock {
 	public MagicTreeSlabBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).dynamicShape());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f));
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -162,8 +162,8 @@
           "onClick": {
             "name": "OpenMagicTableModifiersGUI"
           },
-          "x": 132,
-          "y": 22
+          "x": 69,
+          "y": 44
         }
       },
       {

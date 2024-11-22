@@ -8,7 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -18,7 +18,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.advencedmagic.block.entity.MagicTableBlockEntity;
 import net.mcreator.advencedmagic.AdvencedMagicMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class AdvencedMagicModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, AdvencedMagicMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> MAGIC_TABLE = register("magic_table", AdvencedMagicModBlocks.MAGIC_TABLE, MagicTableBlockEntity::new);

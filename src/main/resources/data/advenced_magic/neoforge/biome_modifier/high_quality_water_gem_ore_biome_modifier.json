@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_overworld",
+  "features": "advenced_magic:high_quality_water_gem_ore",
+  "step": "underground_ores"
+}

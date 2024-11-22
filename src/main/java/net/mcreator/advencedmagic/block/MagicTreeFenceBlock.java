@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicTreeFenceBlock extends FenceBlock {
 	public MagicTreeFenceBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(6f).forceSolidOn());
 	}
 
 	@Override

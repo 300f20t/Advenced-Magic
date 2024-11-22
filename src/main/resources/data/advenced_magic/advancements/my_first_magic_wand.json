@@ -2,7 +2,7 @@
   "display": {
     "background": "advenced_magic:textures/screens/background.png",
     "icon": {
-      "item": "advenced_magic:magic_table"
+      "id": "advenced_magic:magic_table"
     },
     "title": {
       "translate": "advancements.my_first_magic_wand.title"
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "advenced_magic:wooden_magic_wand"
+              "advenced_magic:deleted_mod_element"
             ],
             "count": {
               "min": 1,

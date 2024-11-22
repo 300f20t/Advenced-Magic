@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "advenced_magic:block/magictree_planks",
     "bottom": "advenced_magic:block/magictree_planks",
     "top": "advenced_magic:block/magictree_planks",
     "side": "advenced_magic:block/magictree_planks"

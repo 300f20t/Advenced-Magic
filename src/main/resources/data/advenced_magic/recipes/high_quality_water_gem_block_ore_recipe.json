@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "advenced_magic:high_quality_water_gem_block"
+    }
+  ],
+  "result": {
+    "id": "advenced_magic:high_quality_water_gem",
+    "count": 9
+  }
+}

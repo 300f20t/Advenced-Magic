@@ -1,9 +1,10 @@
+
 package net.mcreator.advencedmagic.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
 
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.api.distmarker.Dist;
@@ -17,12 +18,12 @@ import net.mcreator.advencedmagic.procedures.PlayerManaUsloviiePokazaNalozhienii
 import net.mcreator.advencedmagic.procedures.MaxManaInfoProcedure;
 import net.mcreator.advencedmagic.procedures.ManaInfoProcedure;
 
-@Mod.EventBusSubscriber({Dist.CLIENT})
+@EventBusSubscriber({Dist.CLIENT})
 public class PlayerManaOverlay {
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
-		int w = event.getWindow().getGuiScaledWidth();
-		int h = event.getWindow().getGuiScaledHeight();
+		int w = event.getGuiGraphics().guiWidth();
+		int h = event.getGuiGraphics().guiHeight();
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -35,14 +36,14 @@ public class PlayerManaOverlay {
 			z = entity.getZ();
 		}
 		if (PlayerManaUsloviiePokazaNalozhieniiaProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.advenced_magic.player_mana.label_max_mana"), 10, 30, -1, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.advenced_magic.player_mana.label_player_mana"), 10, 10, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.advenced_magic.player_mana.label_max_mana"), w / 2 + 117, h / 2 + 257, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.advenced_magic.player_mana.label_player_mana"), w / 2 + 117, h / 2 + 266, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					MaxManaInfoProcedure.execute(entity), 60, 30, -1, false);
+					MaxManaInfoProcedure.execute(entity), w / 2 + 171, h / 2 + 257, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					ManaInfoProcedure.execute(entity), 75, 10, -1, false);
+					ManaInfoProcedure.execute(entity), w / 2 + 171, h / 2 + 266, -1, false);
 		}
 	}
 }

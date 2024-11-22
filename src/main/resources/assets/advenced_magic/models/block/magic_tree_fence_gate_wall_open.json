@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall_open",
   "textures": {
+    "particle": "advenced_magic:block/magictree_planks",
     "texture": "advenced_magic:block/magictree_planks"
   },
   "render_type": "solid"
