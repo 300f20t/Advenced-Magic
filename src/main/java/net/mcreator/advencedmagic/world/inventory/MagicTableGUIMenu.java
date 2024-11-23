@@ -1,7 +1,6 @@
 
 package net.mcreator.advencedmagic.world.inventory;
 
-import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -25,7 +24,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.advencedmagic.network.MagicTableGUISlotMessage;
 import net.mcreator.advencedmagic.init.AdvencedMagicModMenus;
 
 import java.util.function.Supplier;
@@ -90,23 +88,11 @@ public class MagicTableGUIMenu extends AbstractContainerMenu implements Supplier
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 97, 35) {
 			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(1, 2, b.getCount() - a.getCount());
-			}
-
-			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(new ResourceLocation("neoforge:modifiers_1")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 124, 17) {
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(2, 2, b.getCount() - a.getCount());
-			}
-
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(new ResourceLocation("neoforge:modifiers_2")));
@@ -114,23 +100,11 @@ public class MagicTableGUIMenu extends AbstractContainerMenu implements Supplier
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 124, 53) {
 			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(3, 2, b.getCount() - a.getCount());
-			}
-
-			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(new ResourceLocation("neoforge:modifiers_2")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 151, 35) {
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(4, 2, b.getCount() - a.getCount());
-			}
-
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(new ResourceLocation("neoforge:modifiers_3")));
@@ -264,13 +238,6 @@ public class MagicTableGUIMenu extends AbstractContainerMenu implements Supplier
 						ihm.setStackInSlot(i, ItemStack.EMPTY);
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			PacketDistributor.sendToServer(new MagicTableGUISlotMessage(slotid, x, y, z, ctype, meta));
-			MagicTableGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

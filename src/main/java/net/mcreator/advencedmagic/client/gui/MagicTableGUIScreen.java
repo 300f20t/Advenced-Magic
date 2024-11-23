@@ -3,8 +3,6 @@ package net.mcreator.advencedmagic.client.gui;
 import org.joml.Vector3f;
 import org.joml.Quaternionf;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -13,13 +11,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.WidgetSprites;
-import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.advencedmagic.world.inventory.MagicTableGUIMenu;
-import net.mcreator.advencedmagic.procedures.GUIItemDisplayingProcedure;
-import net.mcreator.advencedmagic.network.MagicTableGUIButtonMessage;
+import net.mcreator.advencedmagic.procedures.ReturnPlayerModelProcedure;
 
 import java.util.HashMap;
 
@@ -30,8 +25,6 @@ public class MagicTableGUIScreen extends AbstractContainerScreen<MagicTableGUIMe
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_notes_gui_inactive;
-	ImageButton imagebutton_modifiers_gui_inactive;
 
 	public MagicTableGUIScreen(MagicTableGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -50,8 +43,8 @@ public class MagicTableGUIScreen extends AbstractContainerScreen<MagicTableGUIMe
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		if (GUIItemDisplayingProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-			this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 25, this.topPos + 72, 30, 0f, 0, livingEntity);
+		if (ReturnPlayerModelProcedure.execute(entity) instanceof LivingEntity livingEntity) {
+			this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 25, this.topPos + 72, 30, 0f + (float) Math.atan((this.leftPos + 25 - mouseX) / 40.0), (float) Math.atan((this.topPos + 23 - mouseY) / 40.0), livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -62,6 +55,11 @@ public class MagicTableGUIScreen extends AbstractContainerScreen<MagicTableGUIMe
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("advenced_magic:textures/screens/wand_template.png"), this.leftPos + 61, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(new ResourceLocation("advenced_magic:textures/screens/magic_table_gui_texture.png"), this.leftPos + -3, this.topPos + -3, 0, 0, 182, 172, 182, 172);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -76,41 +74,12 @@ public class MagicTableGUIScreen extends AbstractContainerScreen<MagicTableGUIMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.advenced_magic.magic_table_gui.label_modifiers"), 69, 7, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.advenced_magic.magic_table_gui.label_shift_click_to_change"), 51, 70, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.advenced_magic.magic_table_gui.label_modifiers"), 60, 7, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_notes_gui_inactive = new ImageButton(this.leftPos + 26, this.topPos + -15, 16, 16,
-				new WidgetSprites(new ResourceLocation("advenced_magic:textures/screens/notes_gui_inactive.png"), new ResourceLocation("advenced_magic:textures/screens/notes_gui.png")), e -> {
-					if (true) {
-						PacketDistributor.sendToServer(new MagicTableGUIButtonMessage(0, x, y, z));
-						MagicTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-					}
-				}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_notes_gui_inactive", imagebutton_notes_gui_inactive);
-		this.addRenderableWidget(imagebutton_notes_gui_inactive);
-		imagebutton_modifiers_gui_inactive = new ImageButton(this.leftPos + -57, this.topPos + 7, 32, 32,
-				new WidgetSprites(new ResourceLocation("advenced_magic:textures/screens/modifiers_gui_inactive.png"), new ResourceLocation("advenced_magic:textures/screens/modifiers_gui.png")), e -> {
-					if (true) {
-						PacketDistributor.sendToServer(new MagicTableGUIButtonMessage(1, x, y, z));
-						MagicTableGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-					}
-				}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_modifiers_gui_inactive", imagebutton_modifiers_gui_inactive);
-		this.addRenderableWidget(imagebutton_modifiers_gui_inactive);
 	}
 
 	private void renderEntityInInventoryFollowsAngle(GuiGraphics guiGraphics, int x, int y, int scale, float angleXComponent, float angleYComponent, LivingEntity entity) {

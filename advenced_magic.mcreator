@@ -11,7 +11,7 @@
           "src/main/resources/data/advenced_magic/recipes/wooden_magic_wand_craft.json"
         ]
       },
-      "path": "~/Magic Wands"
+      "path": "~/Tools/Magic Wands"
     },
     {
       "name": "MagicTable",
@@ -52,10 +52,8 @@
       "registry_name": "magic_table_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/advencedmagic/network/MagicTableGUIButtonMessage.java",
           "src/main/java/net/mcreator/advencedmagic/world/inventory/MagicTableGUIMenu.java",
-          "src/main/java/net/mcreator/advencedmagic/client/gui/MagicTableGUIScreen.java",
-          "src/main/java/net/mcreator/advencedmagic/network/MagicTableGUISlotMessage.java"
+          "src/main/java/net/mcreator/advencedmagic/client/gui/MagicTableGUIScreen.java"
         ]
       },
       "path": "~/Magic Table"
@@ -398,39 +396,6 @@
       "path": "~/Magic Tree"
     },
     {
-      "name": "WhatWasThat",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "my_first_magic_wand",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/advenced_magic/advancements/my_first_magic_wand.json"
-        ]
-      },
-      "path": "~/Achievements"
-    },
-    {
-      "name": "GUIItemDisplaying",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gui_item_displaying",
-      "metadata": {
-        "return_type": "entity",
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/GUIItemDisplayingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
       "name": "IronFile",
       "type": "tool",
       "compiles": true,
@@ -485,166 +450,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "MagicTableNotesGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_table_notes_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/client/gui/MagicTableNotesGUIScreen.java",
-          "src/main/java/net/mcreator/advencedmagic/world/inventory/MagicTableNotesGUIMenu.java"
-        ]
-      },
-      "path": "~/Magic Table/Notes"
-    },
-    {
-      "name": "OpenMagicTableNotesGUI",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_magic_table_notes_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/OpenMagicTableNotesGUIProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
-      "name": "OpenMagicTableModifiersGUI",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_magic_table_modifiers_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/OpenMagicTableModifiersGUIProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
-      "name": "ModifierChangeInSlot1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modifier_change_in_slot_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
-      "name": "ModifierChangeInSlot2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modifier_change_in_slot_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
-      "name": "ModifierChangeInSlot3",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modifier_change_in_slot_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot3Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
-      "name": "ModifierChangeInSlot4",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modifier_change_in_slot_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/procedures/ModifierChangeInSlot4Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Magic Table"
-    },
-    {
       "name": "MagicWandRMB",
       "type": "procedure",
       "compiles": true,
@@ -656,7 +461,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Magic Wands"
+      "path": "~/Tools/Magic Wands"
     },
     {
       "name": "RingWhileUpdateTick",
@@ -711,7 +516,7 @@
           }
         ]
       },
-      "path": "~/Magic Wands"
+      "path": "~/Tools/Magic Wands"
     },
     {
       "name": "ManaInfo",
@@ -881,20 +686,6 @@
       "path": "~/Rings"
     },
     {
-      "name": "Note1",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "note_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/advencedmagic/client/gui/Note1Screen.java",
-          "src/main/java/net/mcreator/advencedmagic/world/inventory/Note1Menu.java"
-        ]
-      },
-      "path": "~/Magic Table/Notes"
-    },
-    {
       "name": "HighQualityWaterGem",
       "type": "item",
       "compiles": true,
@@ -1010,7 +801,40 @@
           "src/main/resources/assets/advenced_magic/models/item/magic_wand_with_fire_gem.json"
         ]
       },
-      "path": "~/Magic Wands"
+      "path": "~/Tools/Magic Wands"
+    },
+    {
+      "name": "ReturnPlayerModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_player_model",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/advencedmagic/procedures/ReturnPlayerModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic Table"
+    },
+    {
+      "name": "MagicForBeginnersFromScratch",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_for_beginners_from_scratch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/advenced_magic/advancements/magic_for_beginners_from_scratch.json"
+        ]
+      },
+      "path": "~/Achievements"
     }
   ],
   "variable_elements": [
@@ -1046,10 +870,8 @@
       "~CUSTOM:HighQualityWaterGemBlock",
       "~CUSTOM:HighQualityWaterGemOre"
     ],
-    "ITEMS:neoforge:modifiable_items": [
-      "CUSTOM:WoodenMagicWand",
-      "CUSTOM:IronMagicRing",
-      "CUSTOM:MagicWoodMagicWand"
+    "ITEMS:mod:magic_wands": [
+      "CUSTOM:MagicWandWithFireGem"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:MagicTreeStairs"
@@ -1063,22 +885,14 @@
       "~CUSTOM:IronDiamondCoatedFile",
       "~CUSTOM:IronFile"
     ],
-    "ITEMS:neoforge:modifiers_3": [
-      "Items.NETHERITE_INGOT",
-      "Items.NETHER_STAR",
-      "Blocks.OBSIDIAN",
-      "Blocks.CRYING_OBSIDIAN"
-    ],
-    "ITEMS:neoforge:modifiers_2": [
-      "Items.AMETHYST_SHARD",
-      "Items.ECHO_SHARD"
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:IronHammer"
     ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:MagicTreeSlab"
     ],
-    "ITEMS:neoforge:modifiers_1": [
-      "CUSTOM:FacetedDiamond",
-      "CUSTOM:FacetedQuartz"
+    "ITEMS:mod:hammers": [
+      "CUSTOM:IronHammer"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:MagicTreeButton",
@@ -1093,13 +907,15 @@
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:HighQualityWaterGemBlock",
       "~CUSTOM:HighQualityWaterGemOre"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:IronHammer"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.advenced_magic.iron_diamond_coated_file": "Iron Diamond Coated File",
-      "gui.advenced_magic.magic_table_notes_gui.label_0": "0",
       "block.advenced_magic.magic_tree_fence": "MagicTree Fence",
       "gui.advenced_magic.magic_table_gui.label_modifiers": "Modifiers",
       "gui.advenced_magic.magic_table_gui.label_shift_click_to_change": "Shift + click to change",
@@ -1107,30 +923,27 @@
       "gui.advenced_magic.magic_table_gui.tooltip_111": "111",
       "gui.advenced_magic.magic_table_gui.tooltip_333": "333",
       "block.advenced_magic.magic_tree_pressure_plate": "MagicTree Pressure Plate",
-      "advancements.my_first_magic_wand.title": "My first magic wand",
       "item_group.advenced_magic.advenced_magic_creative_tab": "Advenced Magic",
       "block.advenced_magic.magic_tree_button": "MagicTree Button",
       "gui.advenced_magic.player_mana.label_max_mana": "MAX mana:",
       "item.advenced_magic.golden_ring": "Golden Ring",
-      "gui.advenced_magic.magic_table_notes_gui.label_research_notes": "Research notes",
-      "gui.advenced_magic.magic_table_notes_gui.label_7": "/ 9",
       "item.advenced_magic.magic_wand_with_fire_gem": "Magic Wand With Fire Gem",
       "gui.advenced_magic.player_mana.label_player_mana": "Player mana:",
       "block.advenced_magic.magic_tree_planks": "MagicTree Planks",
       "block.advenced_magic.magic_tree_wood": "MagicTree Wood",
-      "advancements.my_first_magic_wand.descr": "Welcome to Advanced Magic",
+      "advancements.magic_for_beginners_from_scratch.title": "Magic for beginners from scratch",
       "item.advenced_magic.iron_file": "Iron File",
       "block.advenced_magic.magic_table": "Magic Table",
       "gui.advenced_magic.magic_table_gui.tooltip_666": "666",
       "item.advenced_magic.high_quality_water_gem": "HighQualityWaterGem",
       "gui.advenced_magic.magic_table_gui.tooltip_empty": "555",
       "block.advenced_magic.magic_tree_stairs": "MagicTree Stairs",
+      "advancements.magic_for_beginners_from_scratch.descr": "Сraft a magic book",
       "gui.advenced_magic.magic_table_gui.tooltip_222": "222",
       "gui.advenced_magic.magic_table_gui.tooltip_444": "444",
       "block.advenced_magic.high_quality_water_gem_block": "Block of HighQualityWaterGem",
       "block.advenced_magic.magic_tree_leaves": "MagicTree Leaves",
       "block.advenced_magic.magic_tree_fence_gate": "MagicTree Fence Gate",
-      "gui.advenced_magic.magic_table_notes_gui.label_research_progress": "Research progress:",
       "item.advenced_magic.iron_hammer": "Iron Hammer",
       "block.advenced_magic.high_quality_water_gem_ore": "HighQualityWaterGem Ore",
       "block.advenced_magic.magic_tree_log": "MagicTree Log"
@@ -1153,19 +966,10 @@
       },
       {
         "name": "Magic Table",
-        "children": [
-          {
-            "name": "Notes",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Rings",
         "children": []
       },
       {
-        "name": "Magic Wands",
+        "name": "Rings",
         "children": []
       },
       {
@@ -1216,7 +1020,12 @@
       },
       {
         "name": "Tools",
-        "children": []
+        "children": [
+          {
+            "name": "Magic Wands",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Crafts",

@@ -2,7 +2,7 @@
   "_fv": 66,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Special",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "iron_diamond_coated_file",
@@ -21,7 +21,7 @@
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 100,
+    "usageCount": 200,
     "glowCondition": {
       "fixedValue": false
     },

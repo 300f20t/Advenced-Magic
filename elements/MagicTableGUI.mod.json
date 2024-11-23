@@ -42,9 +42,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onStackTransfer": {
-            "name": "ModifierChangeInSlot1"
-          },
           "x": 222,
           "y": 71
         }
@@ -63,9 +60,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onStackTransfer": {
-            "name": "ModifierChangeInSlot2"
-          },
           "x": 249,
           "y": 53
         }
@@ -84,9 +78,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onStackTransfer": {
-            "name": "ModifierChangeInSlot3"
-          },
           "x": 249,
           "y": 89
         }
@@ -105,9 +96,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onStackTransfer": {
-            "name": "ModifierChangeInSlot4"
-          },
           "x": 276,
           "y": 71
         }
@@ -116,26 +104,13 @@
         "type": "entitymodel",
         "data": {
           "entityModel": {
-            "name": "GUIItemDisplaying"
+            "name": "ReturnPlayerModel"
           },
           "scale": 30,
           "rotationX": 0,
-          "followMouseMovement": false,
+          "followMouseMovement": true,
           "x": 141,
           "y": 89
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_notes_gui_inactive",
-          "image": "notes_gui_inactive.png",
-          "hoveredImage": "notes_gui.png",
-          "onClick": {
-            "name": "OpenMagicTableNotesGUI"
-          },
-          "x": 152,
-          "y": 22
         }
       },
       {
@@ -149,36 +124,26 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 195,
+          "x": 186,
           "y": 44
         }
       },
       {
-        "type": "imagebutton",
+        "type": "image",
         "data": {
-          "name": "imagebutton_modifiers_gui_inactive",
-          "image": "modifiers_gui_inactive.png",
-          "hoveredImage": "modifiers_gui.png",
-          "onClick": {
-            "name": "OpenMagicTableModifiersGUI"
-          },
-          "x": 69,
-          "y": 44
+          "image": "wand_template.png",
+          "use1Xscale": false,
+          "x": 187,
+          "y": 72
         }
       },
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_shift_click_to_change",
-          "text": {
-            "fixedValue": "Shift + click to change"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 177,
-          "y": 107
+          "image": "magic_table_gui_texture.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 34
         }
       }
     ],
@@ -187,7 +152,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

@@ -5,10 +5,10 @@
       "id": "advenced_magic:magic_table"
     },
     "title": {
-      "translate": "advancements.my_first_magic_wand.title"
+      "translate": "advancements.magic_for_beginners_from_scratch.title"
     },
     "description": {
-      "translate": "advancements.my_first_magic_wand.descr"
+      "translate": "advancements.magic_for_beginners_from_scratch.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,13 +16,13 @@
     "hidden": false
   },
   "criteria": {
-    "my_first_magic_wand_0": {
+    "magic_for_beginners_from_scratch_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "advenced_magic:deleted_mod_element"
+              "advenced_magic:magic_table"
             ],
             "count": {
               "min": 1,
@@ -32,8 +32,5 @@
         ]
       }
     }
-  },
-  "rewards": {
-    "experience": 5
   }
 }
